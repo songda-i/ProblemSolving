@@ -31,3 +31,5 @@
 21.01.02 | [SWEA] [파스칼의 삼각형](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5P0-h6Ak4DFAUq) D2
 
 21.01.03 | [SWEA] [다솔이의 다이아몬드 장식](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWSNw5jKzwMDFAUr) D3
+
+21.01.10 | [SWEA] [String](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14P0c6AAUCFAYi&categoryId=AV14P0c6AAUCFAYi&categoryType=CODE) D3
