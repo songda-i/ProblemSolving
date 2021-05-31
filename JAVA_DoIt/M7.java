@@ -6,16 +6,16 @@ class B {
          *if는 단 하나만 사용가능
          */
         // TODO : 한번에 빠져나오는 break
+        outerLoop:
         for (int i = 2; i < 10; i++) {
             for (int j = 1; j < 10; j++) {
                 if (i == 5 && j==5) {
-                    break;
-                    
+                    break outerLoop;
                 }
                 System.out.println(i+"*"+j+"="+i*j);
             }
         }
-        System.out.println("뚬");
+        System.out.println("END");
 
     }
 }

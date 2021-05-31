@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class M13 {
     public static void main(String[] args) {
@@ -17,15 +18,31 @@ public class M13 {
                 // System.out.println(gugudan[i-2][j-1]);
             }
         }
-        // 이중리스트
-        ArrayList<Integer>[][] myList = new ArrayList[10][10];
-        for(int i=0;i<5;i++) {
-            for(int j=0;j<5;j++) {
-                myList[i][j].add(i*j);
-                // System.out.println(myList[i][j]);
-                
-            }
-        }
+        // 이중리스트 - 괴멸
+        // ArrayList<Integer>[][] myList = new ArrayList[10][10]; 
+        // for(int i=0;i<10;i++) { 
+        //     for(int j=0;j<10;j++) { 
+        //         myList[i][j] = new ArrayList<Integer>(); 
+        //         myList[i][j].add(i*j);
 
+        //     }
+        // } for(int i=0;i<10;i++) { 
+        //     for(int j=0;j<10;j++) { 
+        //         System.out.printf("%d ",myList[i][j]); 
+        //     } System.out.printf("\n"); 
+        // }
+
+        // 이중리스트 ^=^
+        List<List<Integer>> myList = new ArrayList<>();
+        for (int i = 2; i < 10; i++) {
+            List<Integer> arr = new ArrayList<>();
+            for (int j = 1; j < 10; j++) {
+                arr.add(i*j);
+            }
+            myList.add(arr);
+        }
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
     }
 }
