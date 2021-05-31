@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class M13 {
@@ -18,6 +19,9 @@ public class M13 {
                 // System.out.println(gugudan[i-2][j-1]);
             }
         }
+
+        System.out.println("################-LIST-#################");
+
         // 이중리스트 - 괴멸
         // ArrayList<Integer>[][] myList = new ArrayList[10][10]; 
         // for(int i=0;i<10;i++) { 
@@ -44,5 +48,30 @@ public class M13 {
         for (int i = 0; i < myList.size(); i++) {
             System.out.println(myList.get(i));
         }
+
+        System.out.println("################-MAP-##################");
+        
+        // 이중Map
+        HashMap<Integer, HashMap<Integer, Integer>> gugu = new HashMap<Integer, HashMap<Integer, Integer>>();
+        // ret.put(4,12); j i*j
+        // gugu.put(3,ret); i
+        for (int i = 2; i < 10; i++) {
+            HashMap<Integer, Integer> ret = new HashMap<Integer, Integer>();
+            for (int j = 1; j < 10; j++) {
+                ret.put(j, i*j);    
+            }
+            gugu.put(i,ret);
+        }
+
+        // 이중Map출력
+        for (Integer key : gugu.keySet()) {
+            System.out.println("result: " + key + "^" + gugu.get(key));
+                for (Integer k : gugu.get(key).keySet()) {
+                    System.out.println("persent : " + k + ":" + gugu.get(key).get(k));
+                }       
+        }
+
+        System.out.println("구구단을외자 : 5*9"+gugu.get(5).get(9));
+    
     }
 }
