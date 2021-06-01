@@ -9,7 +9,7 @@ public class M11 {
         yo -> YO!!
         NO -> no
         no -> no
-        
+
         OK
          */
         Scanner scanner = new Scanner(System.in);
@@ -19,6 +19,7 @@ public class M11 {
         } else {
             System.out.println(str.toLowerCase());
         }
+        scanner.close();
 
 
         
